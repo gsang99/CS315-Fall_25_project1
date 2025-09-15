@@ -11,12 +11,12 @@ int main(int argc, char* argv[])
 {
     if (argc != 2) {
         std::cerr << "Usage: " << argv[0] << " <maze_file.txt>\n";
-        return 1; // <-- exit early!
+        return 1; //
     }
 
     std::string filename = argv[1];
 
-    // Optional but nice:
+
     if (!std::filesystem::exists(filename)) {
         std::cerr << "Error: file not found: " << filename << "\n";
         return 1;
